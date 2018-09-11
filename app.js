@@ -76,7 +76,10 @@ var SMPLAYER_EXEC = 'smplayer ' + (onTop ? '-ontop' : '')
 var MPV_EXEC = 'mpv ' + (onTop ? '--ontop' : '') + ' --really-quiet --loop=no '
 var MPC_HC_ARGS = '/play'
 var POTPLAYER_ARGS = ''
-
+var clear = function () {
+  'use strict'
+  process.stdout.write('\x1Bc'
+}
 var enc = function (s) {
   return /\s/.test(s) ? JSON.stringify(s) : s
 }
@@ -399,7 +402,7 @@ var ontorrent = function (torrent) {
       var linesremaining = clivas.height
       var peerslisted = 0
 
-      clivas.clear()
+      clear()
       if (argv.airplay) {
         if (airplayServer) clivas.line('{green:streaming to} {bold:' + airplayServer.name + '} {green:using airplay}')
         else clivas.line('{green:streaming} {green:using airplay}')
