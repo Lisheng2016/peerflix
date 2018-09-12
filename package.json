@@ -1,7 +1,7 @@
 {
   "name": "peerflix_clearfix",
   "description": "Streaming torrent client for Node.js with fixed clearing",
-  "version": "0.39.1",
+  "version": "0.39.2",
   "author": "Mathias Buus (@mafintosh) Jim.li (@wavejsctl)",
   "license": "MIT",
   "homepage": "https://github.com/Lisheng2016/peerflix",
