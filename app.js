@@ -78,7 +78,7 @@ var MPC_HC_ARGS = '/play'
 var POTPLAYER_ARGS = ''
 var clear = function () {
   'use strict'
-  process.stdout.write('\x1Bc'
+  process.stdout.write('\x1Bc')
 }
 var enc = function (s) {
   return /\s/.test(s) ? JSON.stringify(s) : s
